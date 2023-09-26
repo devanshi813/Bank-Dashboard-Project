@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tracklead</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="tracklead.css">
+</head>
+<body>
+<div class="app-container">
+    <div class="app-content">
+        <div class="app-content-header">
+            <h1 class="app-content-headerText">TrackLead</h1>
+            <div class="button-container">
+                <button class="app-content-headerButton">Add Product</button>
+                <div class="dropdown">
+                    <button class="dropbtn">filter</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-value="all">All</a>
+                        <a href="#" data-value="Paid">Paid</a>
+                        <a href="#" data-value="UnPaid">UnPaid</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-content-actions">
+        </div>
+        <div class="products-area-wrapper tableView">
+            <div class="products-header">
+                <div class="product-cell Id">Lead ID</div>
+                <div class="product-cell Date">Lead Generation Date</div>
+                <div class="product-cell Status">Lead Status</div>
+                <div class="product-cell Remarks">Mobile</div>
+                <div class="product-cell Remarks">Remarks</div>
+                <div class="product-cell Service">Service</div>
+                <div class="product-cell Name">Customer Name</div>
+                <div class="product-cell Options">Options</div>
+            </div>
+            <!-- Product rows will be generated here by JavaScript -->
+        </div>
+    </div>
+</div>
+<script src="tracklead.js"></script>
+</body>
+</html>

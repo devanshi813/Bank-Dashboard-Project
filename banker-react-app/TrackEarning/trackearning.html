@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trackEarning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="trackearning.css">
+</head>
+<body>
+<div class="app-container">
+    <div class="app-content">
+        <div class="app-content-header">
+            <h1 class="app-content-headerText">TrackEarning</h1>
+            <div class="button-container">
+                <button class="app-content-headerButton">Add Product</button>
+                <div class="dropdown">
+                    <button class="dropbtn">filter</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-value="all">All</a>
+                        <a href="#" data-value="Paid">Paid</a>
+                        <a href="#" data-value="Due">Due</a>
+                        <a href="#" data-value="Not Yet">Not Yet</a>
+                        <a href="#" data-value="Approved">Approved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-content-actions">
+        </div>
+        <div class="products-area-wrapper tableView">
+            <div class="products-header">
+              <div class="product-cell Id">Lead ID</div>
+              <div class="product-cell Date">Lead Generation Date</div>
+              <div class="product-cell Status">Lead Status</div>
+              <div class="product-cell Amount">Amount</div>
+              <div class="product-cell Name">Customer Name</div>
+            </div>
+            <!-- Product rows will be generated here by JavaScript -->
+        </div>
+    </div>
+</div>
+<script src="trackearning.js"></script>
+</body>
+</html>

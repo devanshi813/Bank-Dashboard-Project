@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Service Form</title>
+  <link rel="stylesheet" href="createlead.css">
+</head>
+<body>
+  <div id="form-container">
+    <div>
+      <h1>Customer Service Form</h1>
+      <button id="create_button">Create</button>
+    </div>
+    <form class="form-details" action="/customer_service" method="post">
+      <label for="name">Name of Customer:</label><br>
+      <input class="input-css" type="text" id="name" name="name"><br>
+      <label for="mobile_number">Mobile Number:</label><br>
+      <input class="input-css" type="tel" id="mobile_number" name="mobile_number"><br>
+      <div class="dropdown">
+        <label for="service_select">Select a Service:</label><br>
+        <div class="select-wrapper">
+          <select class="input-css" id="service_select">
+            <option value="">Select a Service</option>
+            <option value="Project Report">Project Report</option>
+            <option value="Tax Planning">Tax Planning</option>
+            <option value="Investment Consultancy">Investment Consultancy</option>
+            <option value="Shop Act below 9 employees">Shop Act below 9 employees</option>
+            <option value="Shop Act Above 9 employees">Shop Act Above 9 employees</option>
+            <option value="Udyam Reg (MSME)">Udyam Reg (MSME)</option>
+            <option value="Food License">Food License</option>
+            <!-- Add more services here as needed -->
+          </select>
+        </div>
+      </div>
+      <label for="type_of_services">Type of Services:</label><br>
+      <input class="input-css" type="text" id="type_of_services" name="type_of_services" readonly><br>
+      <label for="standard_fees">Standard Fees:</label><br>
+      <input class="input-css" type="text" id="standard_fees" name="standard_fees" readonly><br>
+      <label for="remarks">Remarks:</label><br>
+      <textarea class="input-css" id="remarks" name="remarks"></textarea><br>
+      
+      <!-- Create Button -->
+    </form>
+  </div>
+
+  <script src="createlead.js"></script>
+</body>
+</html>

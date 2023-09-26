@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="Profile.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Main -->
+    <div class="main">
+        <h2>Profile</h2>
+        <div class="card">
+            <div class="card-body">
+                <!-- <i class="fa fa-pen fa-xs edit"></i> -->
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><span id="name"></span></td>
+                        </tr>
+                        <tr>
+                            <td>PAN_Number</td>
+                            <td>:</td>
+                            <td><span id="Pan_Number"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Relationship_Manager</td>
+                            <td>:</td>
+                            <td><span id="Relationship_Manager"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Bank_Details</td>
+                            <td>:</td>
+                            <td><span id="Bank_Details"></span></td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+            <button id="change-password-button">Change Password</button>
+
+            <div id="change-password-form" style="display: none;">
+                <form id="Password_Change">
+                    <input type="password" id="old_password" name="old_password"><br>
+                    <input type="password" id="new_password" name="new_password"><br><br>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Profile.js"></script>
+
+</body>
+</html>
