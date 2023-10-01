@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Service</title>
+  <link rel="stylesheet" href="appointrmtobanker.css">
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Admin Portal</h2>
+            <ul>
+                <li><a href="../Admin/admin.html" onclick="loadContent('../Admin/admin.html')"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="../AddRelationship/addrelationship.html" onclick="loadContent('../AddRelationship/addrelationship.html')"><i class="fas fa-user"></i>Add Relationship Manager</a></li>
+                <li><a href="../UpdateRelationship/updaterelationship.html" onclick="loadContent('../UpdateRelationship/updaterelationship.html')"><i class="fas fa-address-card"></i>Update Relationship Manager</a></li>
+                <li><a href="../AppointRMTOBanker/appointrmtobanker.html" onclick="loadContent('../AppointRMTOBanker/appointrmtobanker.html')"><i class="fas fa-user-tie"></i>Appoint Relationship Manager to Banker</a></li>
+                <li><a href="../ApproveAdminRequest/approveadminrequest.html" onclick="loadContent('../ApproveAdminRequest/approveadminrequest.html')"><i class="fas fa-check"></i>Approve Admin Request</a></li>
+                <li><a href="../AddServices/addservice.html" onclick="loadContent('../AddServices/addservice.html')"><i class="fas fa-blog"></i>Add Services</a></li>
+                <li><a href="../UpdateService/updateservice.html" onclick="loadContent('../UpdateService/updateservice.html')"><i class="fas fa-pen-square"></i>Update Service</a></li>
+                <li><a href="../ChangePassword/changepassword.html" onclick="loadContent('../ChangePassword/changepassword.html')"><i class="fas fa-lock"></i>Change Password</a></li>
+            </ul>
+        </div>
+        <div id="Add-RM-to-Banker-Container">
+            <h1>Appoint Relationship Manager To Banker</h1>
+            <form id="Add-RM-to-Banker-form">
+            <label for="service">Relationship Manager:</label><br>
+            <input type="text" id="service" name="service" required><br>
+
+            <label for="payment">Banker:</label><br>
+            <input type="number" id="payment" name="payment" required><br>
+
+            <button type="button" id="add-button">Add Service</button>
+            </form>
+        </div>
+    </div>     
+
+
+
+  <script src="addservice.js"></script>
+</body>
+</html>

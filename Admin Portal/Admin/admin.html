@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css"> <!-- Make sure to link your CSS file here -->
+    <link rel="stylesheet" href="../main.css"> <!-- Make sure to link your CSS file here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <title>Admin Portal</title>
+</head>
+<body>
+    
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Admin Portal</h2>
+                <ul>
+                    <li><a href="../Admin/admin.html" onclick="loadContent('../Admin/admin.html')"><i class="fas fa-home"></i>Dashboard</a></li>
+                    <li><a href="../AddRelationship/addrelationship.html" onclick="loadContent('../AddRelationship/addrelationship.html')"><i class="fas fa-user"></i>Add Relationship Manager</a></li>
+                    <li><a href="../UpdateRelationship/updaterelationship.html" onclick="loadContent('../UpdateRelationship/updaterelationship.html')"><i class="fas fa-address-card"></i>Update Relationship Manager</a></li>
+                    <li><a href="../AppointRMTOBanker/appointrmtobanker.html" onclick="loadContent('../AppointRMTOBanker/appointrmtobanker.html')"><i class="fas fa-user-tie"></i>Appoint Relationship Manager to Banker</a></li>
+                    <li><a href="../ApproveAdminRequest/approveadminrequest.html" onclick="loadContent('../ApproveAdminRequest/approveadminrequest.html')"><i class="fas fa-check"></i>Approve Admin Request</a></li>
+                    <li><a href="../AddServices/addservice.html" onclick="loadContent('../AddServices/addservice.html')"><i class="fas fa-blog"></i>Add Services</a></li>
+                    <li><a href="../UpdateService/updateservice.html" onclick="loadContent('../UpdateService/updateservice.html')"><i class="fas fa-pen-square"></i>Update Service</a></li>
+                    <li><a href="../ChangePassword/changepassword.html" onclick="loadContent('../ChangePassword/changepassword.html')"><i class="fas fa-lock"></i>Change Password</a></li>
+                </ul>
+            </div>
+            
+            <div class="main_content">
+                <div class="info" id="content">
+                    <!-- Content will be loaded here -->
+                    <div class="app-container">
+                        <div class="app-content">
+                            <div class="app-content-header">
+                                <h1 class="app-content-headerText">TrackLead</h1>
+                                <div class="button-container">
+                                    <button class="app-content-headerButton">Add Product</button>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">filter</button>
+                                        <div class="dropdown-content">
+                                            <a href="#" data-value="all">All</a>
+                                            <a href="#" data-value="Paid">Paid</a>
+                                            <a href="#" data-value="UnPaid">UnPaid</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-content-actions">
+                            </div>
+                            <div class="products-area-wrapper tableView">
+                                <div class="products-header">
+                                    <div class="product-cell Id">Lead ID</div>
+                                    <div class="product-cell Date">Lead Generation Date</div>
+                                    <div class="product-cell Status">Lead Status</div>
+                                    <div class="product-cell Remarks">Mobile</div>
+                                    <div class="product-cell Remarks">Remarks</div>
+                                    <div class="product-cell Service">Service</div>
+                                    <div class="product-cell Name">Customer Name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="../Admin/admin.js"></script>
+</body>
+</html>

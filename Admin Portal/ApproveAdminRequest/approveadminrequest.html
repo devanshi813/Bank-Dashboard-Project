@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Service</title>
+  <link rel="stylesheet" href="approveadminrequest.css">
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Admin Portal</h2>
+            <ul>
+                <li><a href="../Admin/admin.html" onclick="loadContent('../Admin/admin.html')"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="../AddRelationship/addrelationship.html" onclick="loadContent('../AddRelationship/addrelationship.html')"><i class="fas fa-user"></i>Add Relationship Manager</a></li>
+                <li><a href="../UpdateRelationship/updaterelationship.html" onclick="loadContent('../UpdateRelationship/updaterelationship.html')"><i class="fas fa-address-card"></i>Update Relationship Manager</a></li>
+                <li><a href="../AppointRMTOBanker/appointrmtobanker.html" onclick="loadContent('../AppointRMTOBanker/appointrmtobanker.html')"><i class="fas fa-user-tie"></i>Appoint Relationship Manager to Banker</a></li>
+                <li><a href="../ApproveAdminRequest/approveadminrequest.html" onclick="loadContent('../ApproveAdminRequest/approveadminrequest.html')"><i class="fas fa-check"></i>Approve Admin Request</a></li>
+                <li><a href="../AddServices/addservice.html" onclick="loadContent('../AddServices/addservice.html')"><i class="fas fa-blog"></i>Add Services</a></li>
+                <li><a href="../UpdateService/updateservice.html" onclick="loadContent('../UpdateService/updateservice.html')"><i class="fas fa-pen-square"></i>Update Service</a></li>
+                <li><a href="../ChangePassword/changepassword.html" onclick="loadContent('../ChangePassword/changepassword.html')"><i class="fas fa-lock"></i>Change Password</a></li>
+            </ul>
+        </div>
+        <div id="add-service-container">
+            <h1>Approve Admin Request</h1>
+            <ul class="name-list" id="nameList">
+                <!-- Rows will be added here -->
+            </ul>
+        </div>
+    </div>     
+
+  <script src="approveadminrequest.js"></script>
+</body>
+</html>
